@@ -100,8 +100,7 @@ jobs:
         chmod 777 ttyd
         ./ttyd -c admin:admin -p 8391 -a -W bash &
         cloudflared tunnel --url http://localhost:8391 > mylog.txt 2>&1 &
-        sleep 5
-        # while [ ! -f ./continue ]; do sleep 5; cat mylog.txt; done         
+        sleep 5      
 
     - name:  show TTYD message
       if: ${{ github.event_name == 'workflow_dispatch' && inputs.ssh_enable }}
@@ -110,6 +109,7 @@ jobs:
         echo "If you want to continue a workflow,"
         echo "just create an empty file with the name continue in the project directory by running touch continue"
         cat mylog.txt
+        # while [ ! -f ./continue ]; do sleep 5; cat mylog.txt; done   
         
     - name:  apt install dependencies
       env:
