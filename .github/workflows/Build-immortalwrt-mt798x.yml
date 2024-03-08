@@ -37,11 +37,11 @@ on:
       openwrt_repo_url:
         description: 'openwrt_repo_url'
         required: false
-        default: 'https://github.com/hanwckf/immortalwrt-mt798x'
+        default: 'https://github.com/immortalwrt/immortalwrt'
       openwrt_repo_branch:
         description: 'openwrt_repo_branch'
         required: false
-        default: 'openwrt-21.02'
+        default: '23.05.1'
       openwrt_config_file:
         description: 'openwrt_config_file'
         required: false
