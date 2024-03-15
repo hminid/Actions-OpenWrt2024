@@ -37,9 +37,9 @@ on:
       openwrt_repo_url:
         description: 'openwrt_repo_url'
         required: false
-        default: 'https://github.com/hanwckf/immortalwrt-mt798x'
+        default: 'https://github.com/openwrt/openwrt'
       openwrt_repo_branch:
-        description: 'openwrt_repo_branch'
+        description: 'main'
         required: false
         default: 'openwrt-21.02'
       openwrt_config_file:
