@@ -39,9 +39,9 @@ on:
         required: false
         default: 'https://github.com/openwrt/openwrt'
       openwrt_repo_branch:
-        description: 'main'
+        description: 'openwrt_repo_branch'
         required: false
-        default: 'openwrt-21.02'
+        default: 'main'
       openwrt_config_file:
         description: 'openwrt_config_file'
         required: false
